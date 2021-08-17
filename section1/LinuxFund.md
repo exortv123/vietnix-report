@@ -49,9 +49,9 @@ Useful options
     target: mouting point
 ```
 Image:
-```
+
 ![df](../images/df.png)
-```
+
 
 <div id='2'></div>
 
