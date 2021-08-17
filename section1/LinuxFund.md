@@ -1,6 +1,4 @@
-## Menu
-
-[Check diskspaces](https://github.com/Report-Project/section1/LinuxFund.md#1)
+# Menu
 
 <ol>
     <li>
@@ -25,7 +23,7 @@
     </li>
 </ol>
 
-## Main dishes
+# Main dishes
 <span style="color: red;">## Warning:</span> Useful options section is in my perspective
 
 ## 1. Check diskspaces
@@ -50,8 +48,26 @@ Useful options
     pcent: percentage diskspace used
     target: mouting point
 ```
+Image:
+```
+![df](../images/df.png)
+```
 
 <div id='2'></div>
+
+## 2.
+Usage:
+```
+
+```
+Command:
+```
+df [OPTION]... [FILE]
+```
+Useful options
+```
+
+```
 <div id='3'></div>
 <div id='4'></div>
 <div id='5'></div>
