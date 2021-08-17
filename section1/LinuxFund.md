@@ -1,6 +1,6 @@
 # Progression
 
-:checkered_flag:
+Founded <span style="color: yellow;">2</span> :key: to :unlock: <span style="color: green;">23</span> :lock:
 
 # Menu
 
