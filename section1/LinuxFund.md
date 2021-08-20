@@ -246,9 +246,9 @@ TIME+: time to live
 COMMAND: this pid is running this process
 ```
 
-## 4 Check network
-
 <div id='4'></div>
+
+## 4 Check network
 
 Command:
 
@@ -273,8 +273,9 @@ Useful options:
 Image: In this case, I filtered port 22 by command `netstat -lvnp | grep ':22'`
 ![netstat](images/netstat.png)
 
-## 5. Check processes
 <div id='5'></div>
+
+## 5. Check processes
 
 Command:
 
@@ -295,8 +296,9 @@ Useful options:
 Image:
 ![ps](images/ps.png)
 
-## 6. List directories
 <div id='6'></div>
+
+## 6. List directories
 
 Command:
 
@@ -317,9 +319,9 @@ Useful options:
 Image:
 ![ls](images/ls.png)
 
-### 7. Find file/folder
-
 <div id='7'></div>
+
+### 7. Find file/folder
 
 Command:
 
@@ -342,9 +344,9 @@ find / -name <file_name> 2>&1
 Image:
 ![find](images/find.png)
 
-## 8.Copy file/folder
-
 <div id='8'></div>
+
+## 8.Copy file/folder
 
 Command:
 
@@ -367,9 +369,9 @@ Useful options:
 Image:
 ![cp](images/cp.png)
 
-## 9. Move file/folder
-
 <div id='9'></div>
+
+## 9. Move file/folder
 
 Command:
 
@@ -387,10 +389,9 @@ Useful options:
 -i: interactive (overwrite existing)
 -b: make a backup
 ```
+<div id='10'></div>
 
 ## 10. Rename file/folder
-
-<div id='10'></div>
 
 Command:
 
@@ -415,9 +416,9 @@ Useful options:
 Image:
 ![rename](images/rename.png)
 
-## 11. Permissions
-
 <div id='11'></div>
+
+## 11. Permissions
 
 Command:
 
@@ -442,9 +443,9 @@ chmod -aG: change group
 Image:
 ![chmod](images/chmod.png)
 
-## 12. Editor
-
 <div id='12'></div>
+
+## 12. Editor
 
 Command:
 
@@ -463,9 +464,9 @@ Image:
 This is `vi` in insert mode, and the mode (`INSERT` | `REPLACE` show on the bottom left of the terminal)
 ![vi](images/vi.png)
 
-## 13. Mount/Umount
-
 <div id='13'></div>
+
+## 13. Mount/Umount
 
 Command:
 
@@ -489,9 +490,10 @@ Here is my rescue USB after mounting
 ![usb2](images/usb2.png)
 Umount
 ![umount](images/umount.png)
-## 14. Symbolic Links
 
 <div id='14'></div>
+
+## 14. Symbolic Links
 
 ** Delete src file will make the link file broken
 Command:
@@ -517,6 +519,8 @@ Useful options:
 Image:
 ![lns](images/lns.png)
 
+<div id='15'></div>
+
 ## 15. Hard Links
 
 Command:
@@ -532,6 +536,8 @@ make link between file/folder => like shortcut in Windows
 
 Image:
 ![ln](images/ln.png)
+
+<div id='16'></div>
 
 ## 16. SSH key generator
 
@@ -554,6 +560,8 @@ Image:
 ![ssh-keygen](images/ssh-keygen.png)
 
 After generation progress, `ssh-keygen` will output 1 public key `id_rsa.pub` (for server) 1 private key `id_rsa` (for client) to authenticate  
+
+<div id='17'></div>
 
 ## 17. Compress/Decompress
 
@@ -584,6 +592,8 @@ Image:
 * Decompress
 ![decompress](images/decompress.png)
 
+<div id='18'></div>
+
 ## 18. Firewall
 
 Command:
@@ -609,6 +619,8 @@ reject
 Image:
 ![ufw](images/ufw.png)
 
+<div id='19'></div>
+
 ## 19. Transfer file via ssh
 
 Command:
@@ -628,6 +640,8 @@ Useful options:
 ```
 Image:
 ![scp](images/scp.png)
+
+<div id='20'></div>
 
 ## 20. View file content without editor
 
@@ -652,6 +666,8 @@ Useful options:
 Image:
 ![viewcontentwoeditor](images/viewcontentwoeditor.png)
 
+<div id='21'></div>
+
 ## 21 Append file content
 
 Command:
@@ -671,6 +687,8 @@ Useful options:
 ```
 Image:
 ![appendFcontent](images/appendFcontent.png)
+
+<div id='22'></div>
 
 ## 22. nmap
 
@@ -696,6 +714,8 @@ Useful options:
 Image:
 ![nmap](images/nmap.png)
 
+<div id='23'></div>
+
 ## 23. telnet
 
 Command:
@@ -716,6 +736,8 @@ Useful options:
 Image:
 ![telnet](images/telnet.png)
 
+<div id='24'></div>
+
 ## 24. ssh
 
 Command:
@@ -735,6 +757,8 @@ Useful options:
 ```
 Image:
 ![ssh](images/ssh.png)
+
+<div id='25'></div>
 
 ## 25. ping
 
@@ -757,6 +781,8 @@ Useful options:
 Image:
 ![ping](images/ping.png)
 
+<div id='26'></div>
+
 ## 26. Redirect standard input
 
 Command:
@@ -770,6 +796,8 @@ Usage:
 Standard input is read from the keyboard
 ```
 
+<div id='27'></div>
+
 ## 27. Redirect standard output
 
 Command:
@@ -782,6 +810,7 @@ Usage:
 ```
 Standard output is read from the screen
 ```
+<div id='28'></div>
 
 ## 28. Redirect standard error
 
@@ -799,6 +828,8 @@ Standard error is read from the screen
 Image:
 ![stderr](images/stderr.png)
 
+<div id='29'></div>
+
 ## 29. /dev/null
 
 Command:
@@ -814,6 +845,8 @@ garbage data storage
 
 Image:
 ![devnull](images/devnull.png)
+
+<div id='30'></div>
 
 ## 30. vnstat for traffic management
 
