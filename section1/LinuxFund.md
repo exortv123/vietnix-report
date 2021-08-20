@@ -1,6 +1,6 @@
 # Progression
 
-Founded 3 :key: to :unlock: 23 :lock:
+Founded 30 :key: to :unlock: 30 :lock:
 
 # Menu
 
@@ -73,6 +73,86 @@ Founded 3 :key: to :unlock: 23 :lock:
     <li> ✅
         <a href='#14'>
             Symbolic Links
+        </a>
+    </li>
+    <li> ✅
+        <a href='#15'>
+            Hard Links
+        </a>
+    </li>
+    <li> ✅
+        <a href='#16'>
+            SSH key generator
+        </a>
+    </li>
+    <li> ✅
+        <a href='#17'>
+            Compress/Decompress
+        </a>
+    </li>
+    <li> ✅
+        <a href='#18'>
+            Firewall
+        </a>
+    </li>
+    <li> ✅
+        <a href='#19'>
+            Transfer file via ssh
+        </a>
+    </li>
+    <li> ✅
+        <a href='#20'>
+            View file content without editor
+        </a>
+    </li>
+    <li> ✅
+        <a href='#21'>
+            Append file content
+        </a>
+    </li>
+     <li> ✅
+        <a href='#22'>
+            nmap
+        </a>
+    </li>
+     <li> ✅
+        <a href='#23'>
+            telnet
+        </a>
+    </li>
+     <li> ✅
+        <a href='#24'>
+            ssh
+        </a>
+    </li>
+     <li> ✅
+        <a href='#25'>
+            ping
+        </a>
+    </li>
+    <li> ✅
+        <a href='#26'>
+            Redirect standard input
+        </a>
+    </li>
+    <li> ✅
+        <a href='#27'>
+            Redirect standard output
+        </a>
+    </li>
+    <li> ✅
+        <a href='#28'>
+            Redirect standard error
+        </a>
+    </li>
+    <li> ✅
+        <a href='#29'>
+            /dev/null
+        </a>
+    </li>
+    <li> ✅
+        <a href='#30'>
+            vnstat for traffic management
         </a>
     </li>
 </ol>
@@ -244,18 +324,23 @@ Image:
 Command:
 
 ```
-find 
+find <directory_to_find> [options]
 ```
 
 Usage:
 ```
+search for files in a directory hierarchy
 ```
 
 Useful options:
 ```
+find / -name <file_name> 2>&1
+-name: name of the file to find
+-type: type of the file to find
+-perm: permission of the file to find
 ```
 Image:
-![]()
+![find](images/find.png)
 
 ## 8.Copy file/folder
 
@@ -264,17 +349,23 @@ Image:
 Command:
 
 ```
+cp <path_to_source_file> <path_to_dest_file>
+```
+```
+cp -R <path_to_source_folder> <path_to_dest_folder>
 ```
 
 Usage:
 ```
+copy file/folder from source path to destination path
 ```
 
 Useful options:
 ```
+-R: recursive
 ```
 Image:
-![]()
+![cp](images/cp.png)
 
 ## 9. Move file/folder
 
@@ -283,17 +374,19 @@ Image:
 Command:
 
 ```
+mv <path_to_source_file> <path_to_dest_file>
 ```
 
 Usage:
 ```
+move file/folder from source path to destination path
 ```
 
 Useful options:
 ```
+-i: interactive (overwrite existing)
+-b: make a backup
 ```
-Image:
-![]()
 
 ## 10. Rename file/folder
 
@@ -302,17 +395,25 @@ Image:
 Command:
 
 ```
+mv <path_to_source_file> <path_to_dest_file>
+```
+OR install rename for Debian, prename for RHEL
+```
+rename [options]
 ```
 
 Usage:
 ```
+rename file/folder
 ```
 
 Useful options:
 ```
+-f: overwrite 
+-d: rename filename component of path
 ```
 Image:
-![]()
+![rename](images/rename.png)
 
 ## 11. Permissions
 
@@ -321,17 +422,25 @@ Image:
 Command:
 
 ```
+* Create user: useradd
+* Modify: usermod
+* Delete: userdel
+* Change permission: chmod
+* Change owner: chown
 ```
 
 Usage:
 ```
+user/group administration
 ```
 
 Useful options:
 ```
+chmod -R: change permission for all file in directory
+chmod -aG: change group 
 ```
 Image:
-![]()
+![chmod](images/chmod.png)
 
 ## 12. Editor
 
@@ -361,33 +470,367 @@ This is `vi` in insert mode, and the mode (`INSERT` | `REPLACE` show on the bott
 Command:
 
 ```
+mount <from> <to>
+umount <from> <to>
 ```
 
 Usage:
 ```
+mount the file systems to devio
 ```
 
 Useful options:
 ```
 ```
 Image:
-![]()
-
+Here, I have a device. If I want to use it, i must mount it to the file system
+![usb1](images/usb1.png)
+Here is my rescue USB after mounting
+![usb2](images/usb2.png)
+Umount
+![umount](images/umount.png)
 ## 14. Symbolic Links
 
 <div id='14'></div>
 
+** Delete src file will make the link file broken
 Command:
 
 ```
+ln -s [target file] [symbolic filename]
+```
+* Delete symlink:
+```
+unlink [symlink to remove]
 ```
 
 Usage:
 ```
+make sym link between file/folder => like shortcut in Windows
 ```
 
 Useful options:
 ```
+-b: backup
+-f: force
 ```
 Image:
-![]()
+![lns](images/lns.png)
+
+## 15. Hard Links
+
+Command:
+
+```
+ln [target file] [symbolic filename]
+```
+
+Usage:
+```
+make link between file/folder => like shortcut in Windows
+```
+
+Image:
+![ln](images/ln.png)
+
+## 16. SSH key generator
+
+Command:
+
+```
+ssh-keygen <options> <...>
+```
+
+Usage:
+```
+generator ssh keygen
+```
+
+Useful options:
+```
+-t: type of key to create (rsa|dsa|ecdsa...)
+```
+Image:
+![ssh-keygen](images/ssh-keygen.png)
+
+After generation progress, `ssh-keygen` will output 1 public key `id_rsa.pub` (for server) 1 private key `id_rsa` (for client) to authenticate  
+
+## 17. Compress/Decompress
+
+Command:
+
+```
+tar [options] <file_name>
+```
+
+Usage:
+```
+an archieving utility
+```
+
+Useful options:
+```
+-cvf: compress .tar
+-zcvf: compress .tar.gz
+-cvjf: compress .tar.bz2
+-xvf: decompress .tar
+-C: extract to
+-tvf: list content in compressed file
+```
+Image:
+* Compress
+![compress](images/compress.png)
+
+* Decompress
+![decompress](images/decompress.png)
+
+## 18. Firewall
+
+Command:
+
+```
+ufw
+```
+```
+iptables
+```
+
+Usage:
+```
+ufw need to installed manually
+```
+
+Useful options:
+```
+status
+allow
+reject
+```
+Image:
+![ufw](images/ufw.png)
+
+## 19. Transfer file via ssh
+
+Command:
+
+```
+scp <src> <dest>
+```
+
+Usage:
+```
+transfer file from local host to remote host via ssh (ssh started)
+```
+
+Useful options:
+```
+-R: directory
+```
+Image:
+![scp](images/scp.png)
+
+## 20. View file content without editor
+
+Command:
+
+```
+grep [file_name_pattern] <file_name> (pr file path)
+```
+```
+while read line; do echo $line; done < [file_name]
+```
+
+Usage:
+```
+view file content without editor
+```
+
+Useful options:
+```
+-R: recursive (view all file content in directory)
+```
+Image:
+![viewcontentwoeditor](images/viewcontentwoeditor.png)
+
+## 21 Append file content
+
+Command:
+
+```
+echo "<content>" >> <file_path> (or file name)
+```
+
+Usage:
+```
+append file content
+```
+
+Useful options:
+```
+>: overwrite 
+```
+Image:
+![appendFcontent](images/appendFcontent.png)
+
+## 22. nmap
+
+Command:
+
+```
+nmap <ip>
+```
+
+Usage:
+```
+port scanning
+```
+
+Useful options:
+```
+-sT: scan TCP
+-sC: default script
+-sV: version detection
+-O: discovery OS
+-oN: output file
+```
+Image:
+![nmap](images/nmap.png)
+
+## 23. telnet
+
+Command:
+
+```
+telnet <ip> (port)
+```
+
+Usage:
+```
+terminal network
+```
+
+Useful options:
+```
+-l: user
+```
+Image:
+![telnet](images/telnet.png)
+
+## 24. ssh
+
+Command:
+
+```
+ssh <username>@<host>
+```
+
+Usage:
+```
+secure shell 
+```
+
+Useful options:
+```
+-q: quiet mode
+```
+Image:
+![ssh](images/ssh.png)
+
+## 25. ping
+
+Command:
+
+```
+ping <ip>
+```
+
+Usage:
+```
+ICMP echo request
+```
+
+Useful options:
+```
+-I: by interface
+--t: TTL
+```
+Image:
+![ping](images/ping.png)
+
+## 26. Redirect standard input
+
+Command:
+
+```
+0>
+```
+
+Usage:
+```
+Standard input is read from the keyboard
+```
+
+## 27. Redirect standard output
+
+Command:
+
+```
+1>
+```
+
+Usage:
+```
+Standard output is read from the screen
+```
+
+## 28. Redirect standard error
+
+Command:
+
+```
+2>
+```
+
+Usage:
+```
+Standard error is read from the screen
+```
+
+Image:
+![stderr](images/stderr.png)
+
+## 29. /dev/null
+
+Command:
+
+```
+>/dev/null
+```
+
+Usage:
+```
+garbage data storage
+```
+
+Image:
+![devnull](images/devnull.png)
+
+## 30. vnstat for traffic management
+
+Command:
+
+```
+vnstat
+```
+
+Usage:
+```
+traffic management
+```
+
+Useful options:
+```
+-m: monthly
+```
+Image:
+![vnstat](images/vnstat.png)
