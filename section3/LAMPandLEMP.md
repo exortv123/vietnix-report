@@ -110,7 +110,7 @@ sudo apt-get install php php-curl php-gd php-mbstring php-xml php-xmlrpc php-soa
 
 * Installing WordPress on LAMP:
 
-I use the <a>script</a> (must be root for installing this)
+I use the <a href=https://raw.githubusercontent.com/exortv123/vietnix-report/master/section3/installWP.sh>script</a> (must be root for installing this)
 
 ![iwordpress](images/iwordpress.png)
 
