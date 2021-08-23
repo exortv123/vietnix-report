@@ -110,7 +110,7 @@ sudo apt-get install php php-curl php-gd php-mbstring php-xml php-xmlrpc php-soa
 
 * Installing WordPress on LAMP:
 
-I use the <a href=https://raw.githubusercontent.com/exortv123/vietnix-report/master/section3/installWP.sh>script</a> (must be root for installing this)
+I use the <a href=https://raw.githubusercontent.com/exortv123/vietnix-report/master/script/iLAMP_WP.sh>script</a> (root much more easy to use this script)
 
 ![iwordpress](images/iwordpress.png)
 
@@ -133,4 +133,34 @@ After installed, WordPress notifies you that it was installed, and redirects to 
 Done!
 
 ![wpdashboard](images/wp_dashboard.png)
+
 ## 2. LEMP stack
+* Install library
+
+`sudo apt install php-fpm php-mysql php-curl php-mbstring php-gd php-json php-xml php-xmlrpc php-cgi php-zip php-pear -y`
+
+* Install nginx: `sudo apt-get install nginx`
+
+![nginx](images/nginx.png)
+
+Configuration nginx in `/etc/nginx/sites-available/default`
+
+![nginxIndex](images/nginx_index.png)
+
+Install MySQL and PHP like above and this is give an access to WP in nginx web server
+
+![nginx_wp403](images/nginx_wp403.png)
+
+Copy configuration file `sudo cp /etc/nginx/sites-avaliable/default /etc/nginx/sites-enabled/wordpress`
+
+![cfgnginx](images/confnginx.png)
+
+Make sure that your php-fpm running `sudo service php7.x-fpm restart`
+
+Check info.php
+
+![nginx_phpinfo](images/nginx_phpinfo.png)
+
+Go check `localhost/wordpress`
+
+![nginx_wordpress](images/nginx_wordpress.png)
