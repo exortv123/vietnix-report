@@ -95,7 +95,7 @@ It worked!
 mysql -uroot -p => enter password
 
 mysql> CREATE DATABASE wp_db;
-mysql> GRANT ALL ON wp_db.* TO 'wp_admin'@'localhost' IDENTIFIED BY 'testlamp';
+mysql> GRANT ALL ON wp_db.* TO 'wp_admin'@'localhost' IDENTIFIED BY '<password_here>';
 mysql> FLUSH PRIVILLEGES;
 ```
 ![createmysqldb](images/createmysqldb.png)
@@ -110,6 +110,27 @@ sudo apt-get install php php-curl php-gd php-mbstring php-xml php-xmlrpc php-soa
 
 * Installing WordPress on LAMP:
 
+I use the <a>script</a> (must be root for installing this)
 
+![iwordpress](images/iwordpress.png)
 
+Config database in WP (change the owner to www-data)
+
+![configdbWP](images/configdbWP.png)
+
+Change DB_NAME, DB_USER, DB_PASSWORD, DB_HOST(if do not use localhost)
+
+![wp-config](images/wp-config.png)
+
+![wp1](images/wp1.png)
+
+![wp2](images/wp2.png)
+
+After installed, WordPress notifies you that it was installed, and redirects to the login page.
+
+![wplogin](images/wplogin.png)
+
+Done!
+
+![wpdashboard](images/wp_dashboard.png)
 ## 2. LEMP stack
