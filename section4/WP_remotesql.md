@@ -1,6 +1,6 @@
 # Progression
 
-Founded 2 :key: to :unlock: 2 :lock:
+Founded 5 :key: to :unlock: 5 :lock:
 
 # Menu
 
