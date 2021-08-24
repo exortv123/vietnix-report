@@ -1,6 +1,6 @@
 # Progression
 
-Founded 0 :key: to :unlock: 2 :lock:
+Founded 2 :key: to :unlock: 2 :lock:
 
 # Menu
 
@@ -20,6 +20,8 @@ Founded 0 :key: to :unlock: 2 :lock:
 # Main dishes
 
 I using <span style="color: red;"> Debian </span> base for this meal
+
+<div id='1'></div>
 
 ## 1. LAMP stack
 
@@ -134,6 +136,8 @@ Done!
 
 ![wpdashboard](images/wp_dashboard.png)
 
+<div id='2'></div>
+
 ## 2. LEMP stack
 * Install library
 
@@ -164,3 +168,7 @@ Check info.php
 Go check `localhost/wordpress`
 
 ![nginx_wordpress](images/nginx_wordpress.png)
+
+Go to `wp-login.php` for login and administration
+
+![nginx_wp-login](images/nginx_wp-login.png)
