@@ -20,6 +20,16 @@ Founded 2 :key: to :unlock: 2 :lock:
             VSFTPD
         </a>
     </li>
+    <li> ✅
+        <a href='#4'>
+            PHPmyadmin
+        </a>
+    </li>
+    <li> ✅
+        <a href='#5'>
+            Wordpress installation in this stack
+        </a>
+    </li>
 </ol>
 
 # Main dishes
@@ -88,6 +98,8 @@ And I using userlist to access FTP, I create user ftpuser and connect to port 21
 
 ![filezilla](images/filezilla.png)
 
+<div id='4'></div>
+
 ## 4. PHPmyadmin
 
 Install by `sudo apt-get install phpmyadmin` and setup password
@@ -104,7 +116,9 @@ Dashboard
 
 ![phpmyadmin_dashboard](images/phpmyadmin_dashboard.png)
 
-## 5. Wordpress installation in this model
+<div id='5'></div>
+
+## 5. Wordpress installation in this stack
 
 Create database in phpmyadmin and install by using the <a href=https://raw.githubusercontent.com/exortv123/vietnix-report/master/script/iLAMP_WP.sh>script</a>
 
