@@ -155,6 +155,10 @@ Founded 30 :key: to :unlock: 30 :lock:
             vnstat for traffic management
         </a>
     </li>
+    Special:
+    <a href='#0101'>
+            Different between hard links and symbolic links
+    </a>
 </ol>
 
 # Main dishes
@@ -551,6 +555,7 @@ make link between file/folder => like shortcut in Windows
 Image:
 ![ln](images/ln.png)
 
+<div id='0101'></div>
 
 ** Different between hard links and symbolic links:
 
