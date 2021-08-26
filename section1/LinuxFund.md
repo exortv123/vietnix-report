@@ -429,6 +429,7 @@ Command:
 * Change permission: chmod
 * Change owner: chown
 ```
+
 Example: 
 `add` new user `vietnix` with uid `6868`: `useradd -u 6868 vietnix`
 `add` new user in `/home/vietnix` directory: `useradd -m vietnix`
@@ -549,6 +550,33 @@ make link between file/folder => like shortcut in Windows
 
 Image:
 ![ln](images/ln.png)
+
+
+** Different between hard links and symbolic links:
+
+    inode: is the index that referer to a memory location
+
+Hard links: 
+    Pros:
+```
+same inode when linking, easy to find
+can work-well with almost application
+when delete source file, the link still existed
+```
+    Cons:
+```
+Cannot link to another filesystems
+Cannot hard link directory
+```
+Symbolic links: 
+```
+Different inode when linking
+Can link the directory
+```
+
+```
+When delete a source file, the file link does not existed
+```
 
 <div id='16'></div>
 

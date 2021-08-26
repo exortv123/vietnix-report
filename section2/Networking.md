@@ -110,7 +110,15 @@ CNAME Record: These records resolve to another domain name.
 
 MX Record: These records resolve to the address of the servers that handle the email for the domain you are querying.
 
-TXT Recorf: TXT records are free text fields where any text-based data can be stored. TXT records have multiple uses, but some common ones can be to list servers that have the authority to send an email on behalf of the domain (this can help in the battle against spam and spoofed email). They can also be used to verify ownership of the domain name when signing up for third party services.
+TXT Record: TXT records are free text fields where any text-based data can be stored. TXT records have multiple uses, but some common ones can be to list servers that have the authority to send an email on behalf of the domain (this can help in the battle against spam and spoofed email). They can also be used to verify ownership of the domain name when signing up for third party services.
+
+NS Record: These record store Name Server record for DNS entry.
+
+SOA Record: These record  store admin information about a domain.
+
+SRV Record: These record specifies a port for specific services.
+
+PTR Record: These record provide a doamin name in reverse-lookups.
 ```
 
 * Make DNS request progression show below
