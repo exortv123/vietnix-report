@@ -429,6 +429,19 @@ Command:
 * Change permission: chmod
 * Change owner: chown
 ```
+Example: 
+`add` new user `vietnix` with uid `6868`: `useradd -u 6868 vietnix`
+`add` new user in `/home/vietnix` directory: `useradd -m vietnix`
+
+Change user information `main group` of the user `vietnix` to `www-data`:  `usermod -g www-data vietnix`
+change user information `name` of the user `remoteuser` to `vsftpuser`: `usermod -l vsftpduser remoteuser`
+
+delete user `test`: userdel -r -f test
+* -r: remove `/home/test` directory and mail spool in this case
+* -f: force remove of files
+
+change permission of file `id_rsa` to user can read and write: `chmod 600 id_rsa`
+change permission all file in folder `/var/www/html` to user can read, write, execute; group can read, execute and other can read, execute: `chmod -R 755 /var/www/html/`
 
 Usage:
 ```
