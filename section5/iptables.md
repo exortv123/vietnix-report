@@ -74,7 +74,6 @@ For example, the server routing a packet and the rule of the firewall allow them
 ```
 
 
-
 * TABLES: 
 
 ```
@@ -88,6 +87,8 @@ Security tables (new feature): SELinux
 Connection tracking is `depended on the raw table` and `matched the state of the connection`. The tracking system provide for `iptables` neccessary function to active stateful. The conntecion tracking apply in the networking stack. The system match each packet on a set of current connection. The system `update` the status of the connection on there storage and `add` if necessary.
 For each packet marked as `NOTRACK` and the table raw close the tracking connection
 
+<div id='2'></div>
+
 ## 2.trace the packet
 
 There are 2 way to trace the packet that I know: traceroute and using wireshark for capture packet
@@ -99,6 +100,8 @@ There are 2 way to trace the packet that I know: traceroute and using wireshark 
 and wireshark:
 
 ![wireshark](images/wireshark.png)
+
+<div id='3'></div>
 
 ## 3.iptables rules
 
@@ -156,6 +159,9 @@ DROP: deny packet
 REJECT: deny packet
 LOG: accept packet but loging
 ```
+
+<div id='4'></div>
+
 ## 4.tcpdump
 
 * Usage: dump traffic on a network
