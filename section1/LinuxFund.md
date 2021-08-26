@@ -568,12 +568,14 @@ when delete source file, the link still existed
 Cannot link to another filesystems
 Cannot hard link directory
 ```
+
 Symbolic links: 
+    Pros:
 ```
 Different inode when linking
 Can link the directory
 ```
-
+    Cons:
 ```
 When delete a source file, the file link does not existed
 ```
