@@ -562,25 +562,30 @@ Image:
     inode: is the index that referer to a memory location
 
 Hard links: 
-    Pros:
+
+Pros:
 ```
 same inode when linking, easy to find
 can work-well with almost application
 when delete source file, the link still existed
 ```
-    Cons:
+Cons:
 ```
 Cannot link to another filesystems
 Cannot hard link directory
 ```
 
-Symbolic links: 
-    Pros:
+Symbolic links:
+
+Pros:
+
 ```
 Different inode when linking
 Can link the directory
 ```
-    Cons:
+
+Cons:
+
 ```
 When delete a source file, the file link does not existed
 ```
